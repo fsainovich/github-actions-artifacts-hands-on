@@ -1,5 +1,3 @@
-The workflow should look like below, notice the download job being added!
-
 name: Workflow Demo
 'on':
   - push
@@ -16,7 +14,7 @@ jobs:
         with:
           name: hello-artifact
           path: hello.txt
-          
+
   download: 
     needs: build
     runs-on: ubuntu-latest
