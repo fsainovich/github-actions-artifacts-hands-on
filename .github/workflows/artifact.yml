@@ -14,7 +14,7 @@ jobs:
       run: echo "Hello, world!" > hello.txt
 
     - name: Archive text file
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: hello-artifact
         path: hello.txt
@@ -30,11 +30,11 @@ jobs:
     #- name: Create dir
     #  run: mkdir ./artifacts
 
-    - name: Archive text file
-      uses: actions/download-artifact@v2
+    - name: Donwload text file
+      uses: actions/download-artifact@v4
       with:
         name: hello-artifact
-        path: ./artifacts/
+        path: artifacts/
     - name: Ls
       run: ls -latr artifacts
 
