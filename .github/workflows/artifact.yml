@@ -36,5 +36,8 @@ jobs:
         name: hello-artifact
         path: ./artifacts/hello.txt
 
+    - name: Ls
+      run: ls -latr
+
     - name: Display hello.txt
       run: cat ./artifacts/hello.txt
