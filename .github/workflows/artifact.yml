@@ -27,8 +27,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2  
 
-    - name: Create dir
-      run: mkdir ./artifacts
+    #- name: Create dir
+    #  run: mkdir ./artifacts
 
     - name: Archive text file
       uses: actions/download-artifact@v2
